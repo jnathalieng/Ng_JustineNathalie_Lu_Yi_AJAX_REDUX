@@ -37,5 +37,5 @@ To run the portfolio locally:
 Feel free to reach out!
 
 Gmail: 
-[JustineNathalie Ng]()
+[JustineNathalie Ng](ngjnathalie.ca@gmail.com)
 [Yi Lu](yilu2559@gmail.com)
