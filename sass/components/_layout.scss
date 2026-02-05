@@ -1,0 +1,27 @@
+@use "../abstracts" as *;
+
+.main-container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 40px;
+  min-height: 900px;
+}
+
+.logo-container {
+  text-align: center;
+  padding: 24px 0 16px;
+}
+
+.logo-container .sw-logo {
+  max-width: 420px;
+  height: auto;
+  filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.35));
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-top: 8px;
+  align-items: stretch;
+}
