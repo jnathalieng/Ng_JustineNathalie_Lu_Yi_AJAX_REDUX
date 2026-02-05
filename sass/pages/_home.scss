@@ -1,0 +1,98 @@
+@use "../abstracts" as *;
+
+.hero-background {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+
+  background: linear-gradient(
+    180deg,
+    #E8A5A5,
+    #F4B4A4,
+    #F5C9A8,
+    #E8C4A8,
+    #A88B9B,
+    #7A5F7F
+  );
+}
+
+.hero-background::before {
+  content: "";
+  position: absolute;
+  top: 160px;
+  right: 160px;
+  width: 300px;
+  height: 300px;
+  border-radius: 999px;
+
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 240, 200, 0.4),
+    transparent
+  );
+
+  filter: blur(40px);
+}
+
+.hero-background::after {
+  content: "";
+  position: absolute;
+  top: 220px;
+  right: 120px;
+  width: 200px;
+  height: 200px;
+  border-radius: 999px;
+
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 245, 210, 0.3),
+    transparent
+  );
+
+  filter: blur(30px);
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .content-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .main-container {
+    padding: 20px;
+  }
+
+  .character-panel {
+    max-height: 520px;
+  }
+
+  .movie-panel {
+    padding: 30px;
+  }
+
+  .movie-card {
+    padding: 20px;
+  }
+
+  .movie-poster {
+    width: 250px;
+    max-width: 250px;
+  }
+
+  .movie-panel.active {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 0;
+    z-index: 100;
+    overflow-y: auto;
+    max-height: 900px;
+  }
+}

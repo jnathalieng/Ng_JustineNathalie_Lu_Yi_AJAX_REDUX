@@ -1,1 +1,24 @@
-@use 'fonts';
+// Colors
+$color-primary: #8B5E83;
+$color-bg-light: rgba(255, 255, 255, 0.92);
+$color-bg-search: #6B4968;
+$color-text-dark: #333333;
+$color-text-light: #FFFFFF;
+$color-border: rgba(100, 70, 100, 0.2);
+$color-scrollbar: #C48B9F;
+$color-poster-paper: #f6f0e2;
+
+// Typography
+$font-heading: 'Orbitron', sans-serif;
+$font-body: 'Roboto', Arial, sans-serif;
+
+// Spacing
+$spacing-sm: 10px;
+$spacing-md: 20px;
+$spacing-lg: 30px;
+$spacing-xl: 40px;
+
+// Breakpoints
+$breakpoint-mobile: 767px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1200px;

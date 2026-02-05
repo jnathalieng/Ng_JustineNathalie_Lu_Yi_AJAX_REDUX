@@ -1,0 +1,30 @@
+@use "../abstracts" as *;
+
+.character-panel {
+  background-color: #f6f0e2;
+  border: 3px solid #4A5F8C;
+  border-radius: 8px;
+  padding: 32px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  height: 650px;
+  overflow-y: auto;
+}
+
+@media (min-width: 768px) {
+  .character-panel {
+    height: 650px;
+  }
+}
+
+#character-box {
+  margin-top: 16px;
+}
+
+#character-box ul {
+  list-style-type: none;
+}
+
+#character-box li {
+  border-bottom: 1px solid $color-border;
+  padding: 12px 0;
+}

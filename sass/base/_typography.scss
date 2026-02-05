@@ -1,0 +1,25 @@
+@use "../abstracts" as *;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-body;
+  color: $color-text-dark;
+  overflow-x: hidden;
+  min-height: 900px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.panel-title {
+  font-family: $font-heading;
+  font-size: 20px;
+  margin-bottom: 14px;
+  letter-spacing: 1px;
+}
