@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Star Wars API Character Guide</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Explore Star Wars characters and movies with our interactive guide">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="hero-background"></div>
+
+    <header class="site-header">
+      <div class="logo-container">
+        <img src="images/star-wars-logo.png" alt="Star Wars Logo" class="sw-logo">
+      </div>
+      <h1 class="hidden">Star Wars Character Guide</h1>
+    </header>
+
+    <main class="main-container">
+      <div class="content-grid">
+
+        <!-- Character Panel -->
+        <section class="character-panel">
+          <h2 class="panel-title">Characters</h2>
+
+          <div class="search-container">
+            <label class="search-label" for="character-search">Search</label>
+
+            <input
+              class="search-input"
+              id="character-search"
+              name="character-search"
+              type="text"
+              placeholder="Type a name..."
+            >
+
+            <button
+              class="search-btn"
+              id="search-btn"
+              type="button">
+              Search
+            </button>
+          </div>
+
+          <div class="loading hidden" id="loading-characters">
+            <div class="spinner"></div>
+            <p>Loading characters...</p>
+          </div>
+
+          <div class="character-box" id="character-box"></div>
+        </section>
+
+        <!-- Movie Panel -->
+        <section class="movie-panel" id="movie-panel">
+
+          <div class="movie-panel-header">
+            <h2 class="panel-title">Movie Info</h2>
+
+            <button
+              class="close-btn hidden"
+              id="close-btn"
+              type="button">
+              Close
+            </button>
+          </div>
+
+          <div class="loading hidden" id="loading-movie">
+            <div class="spinner"></div>
+            <p>Loading movie...</p>
+          </div>
+
+          <div class="movie-con" id="movie-con"></div>
+
+          <template id="movie-template">
+            <article class="movie-card">
+              <img class="movie-poster" src="images/default.jpg" alt="">
+              <h3 class="movie-title"></h3>
+              <p class="movie-episode"></p>
+
+              <div class="movie-crawl">
+                <p class="crawl-text"></p>
+              </div>
+            </article>
+          </template>
+
+        </section>
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>Created by: Justine Ng &amp; Lu Yi</p>
+      <p>Star Wars &copy; 2026</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
